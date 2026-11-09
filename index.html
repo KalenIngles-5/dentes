@@ -1,0 +1,464 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Dental clinic with a written treatment plan before any procedure. Consultations, prevention, aesthetics and oral rehabilitation.">
+  <meta name="theme-color" content="#315E55">
+  <title>Dental Clinic | Care you can trust</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js.js" defer></script>
+</head>
+<body>
+
+  <!-- Reusable SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 4.2c-1.4 0-2.2-.8-3.8-.8C5.9 3.4 5 5.2 5 7.6c0 2.6 1 4.2 1.4 6.6.5 2.8 1 6.8 2.6 6.8 1.4 0 1.5-3.4 3-3.4s1.6 3.4 3 3.4c1.6 0 2.1-4 2.6-6.8.4-2.4 1.4-4 1.4-6.6 0-2.4-.9-4.2-3.2-4.2-1.6 0-2.4.8-3.8.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z M14 3v5h5 M10 13h6 M10 17h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 10h16M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.6-6-10.5a6 6 0 0 1 12 0C18 15.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" data-progress aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Dental Clinic, home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-tooth"/></svg></span>
+        <span class="brand-text"><b>Dental</b><small>Clinic</small></span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main">
+        <a href="#servicos">Services</a>
+        <a href="#como-funciona">How it works</a>
+        <a href="#equipa">Team</a>
+        <a href="#testemunhos">Testimonials</a>
+        <a href="#perguntas">Questions</a>
+        <a href="#contacto">Contact</a>
+        <a class="nav-cta" href="#marcar">Book an appointment</a>
+        <div class="nav-foot">
+          <a href="tel:+000000000">Emergencies: [number to confirm]</a>
+          <span data-open-status-nav>&nbsp;</span>
+        </div>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO (slider) ============ -->
+    <section class="hero" id="top" aria-roledescription="carousel" aria-label="Clinic highlights">
+      <div class="hero-slides" data-slides>
+        <article class="hero-slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+          <img src="img/slider-1.jpg" alt="Smiling patient, comfortable in the treatment chair">
+          <div class="hero-copy">
+            <p class="eyebrow">Care with calm</p>
+            <h1 class="hero-title">A smile <em>cared for</em> from start to finish.</h1>
+            <p class="hero-tagline">We explain every step before we take it. Nothing is done without your consent and without a written plan.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#marcar">Book an appointment</a>
+              <a class="btn-ghost light" href="#servicos">View services</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide" aria-roledescription="slide" aria-label="2 of 3">
+          <img src="img/slider-2.jpg" alt="Dentist treating a patient with precision equipment">
+          <div class="hero-copy">
+            <p class="eyebrow">Dedicated team</p>
+            <h2 class="hero-title">Precision in <em>every</em> gesture.</h2>
+            <p class="hero-tagline">An attentive team, with the time needed to treat well and without rushing.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#equipa">Meet the team</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide" aria-roledescription="slide" aria-label="3 of 3">
+          <img src="img/slider-3.jpg" alt="Bright, organised treatment room">
+          <div class="hero-copy">
+            <p class="eyebrow">A space designed for you</p>
+            <h2 class="hero-title">A <em>calm</em> clinic, from start to finish.</h2>
+            <p class="hero-tagline">A clean, organised environment designed so you feel at ease.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#contacto">How to get here</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="hero-bar">
+        <div class="hero-dots" data-dots></div>
+        <p class="hero-count"><b data-current>01</b> / <span>03</span></p>
+        <div class="hero-nav">
+          <button class="round-btn" type="button" data-prev aria-label="Previous slide">&larr;</button>
+          <button class="round-btn" type="button" data-next aria-label="Next slide">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAND ============ -->
+    <section class="trust" aria-label="Clinic commitments">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>
+          <h2>Written plan</h2>
+          <p>Before any treatment, you receive a written plan and quote so you can decide calmly.</p>
+        </div>
+        <div class="trust-item reveal" style="--d:1">
+          <svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h2>Strict sterilisation</h2>
+          <p>Instruments are sterilised between each use. [Describe the clinic's actual protocol.]</p>
+        </div>
+        <div class="trust-item reveal" style="--d:2">
+          <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>
+          <h2>Qualified team</h2>
+          <p>Professionals registered with the professional register. [Registration number to confirm.]</p>
+        </div>
+        <div class="trust-item reveal" style="--d:3">
+          <svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg>
+          <h2>Follow-up</h2>
+          <p>We review your case after treatment, because care doesn't end in the chair.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / WHY US ============ -->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <figure class="about-media reveal">
+          <img src="img/img-1.jpg" alt="Treatment room with plants and organised equipment" loading="lazy">
+          <figcaption class="media-tag">Treatment room</figcaption>
+        </figure>
+        <div class="about-copy reveal" style="--d:1">
+          <p class="eyebrow">Why this clinic</p>
+          <h2>We treat your health <em>as our own.</em></h2>
+          <p class="lead">Trust is built on clarity. We explain the diagnosis, the options and the cost of each one, and we only proceed when you agree.</p>
+          <ul class="checks">
+            <li>Diagnosis explained with images and plain words</li>
+            <li>Treatment options presented side by side</li>
+            <li>No procedure without your consent</li>
+            <li>Second opinion available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES (tabs with image) ============ -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2>Complete care <em>for all ages.</em></h2>
+          </div>
+          <p class="lead">Choose a service to see what happens in each appointment. [Service list to be confirmed by the clinic.]</p>
+        </div>
+
+        <div class="svc-layout reveal">
+          <div class="svc-tabs" role="tablist" aria-label="Services" data-svc-tabs>
+            <button class="svc-tab is-active" role="tab" id="svc-0" aria-selected="true" aria-controls="svc-panel" tabindex="0" data-svc="0" type="button">
+              <span class="svc-num">01</span><span>Check-up and diagnosis</span>
+            </button>
+            <button class="svc-tab" role="tab" id="svc-1" aria-selected="false" aria-controls="svc-panel" tabindex="-1" data-svc="1" type="button">
+              <span class="svc-num">02</span><span>Cleaning and prevention</span>
+            </button>
+            <button class="svc-tab" role="tab" id="svc-2" aria-selected="false" aria-controls="svc-panel" tabindex="-1" data-svc="2" type="button">
+              <span class="svc-num">03</span><span>Smile aesthetics</span>
+            </button>
+            <button class="svc-tab" role="tab" id="svc-3" aria-selected="false" aria-controls="svc-panel" tabindex="-1" data-svc="3" type="button">
+              <span class="svc-num">04</span><span>Implants and rehabilitation</span>
+            </button>
+          </div>
+
+          <div class="svc-panel" role="tabpanel" id="svc-panel" aria-labelledby="svc-0" tabindex="0" data-svc-panel>
+            <div class="svc-media">
+              <img src="img/img-6.jpg" alt="Dentist explaining an X-ray on screen" data-svc-img>
+            </div>
+            <div class="svc-body">
+              <h3 data-svc-title>Check-up and diagnosis</h3>
+              <p data-svc-text>We assess your mouth, show you what we find and explain the options in plain language.</p>
+              <ul class="checks" data-svc-points>
+                <li>Complete clinical examination</li>
+                <li>X-rays when necessary</li>
+                <li>Written treatment plan</li>
+              </ul>
+              <p class="svc-meta">Estimated duration: <b data-svc-time>[to confirm]</b></p>
+              <a class="btn" href="#marcar">Book this appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS (steps) ============ -->
+    <section class="section process" id="como-funciona">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2>Four steps, <em>always with your approval.</em></h2>
+          </div>
+        </div>
+        <ol class="steps reveal" data-steps-list>
+          <li class="step is-active">
+            <button type="button" data-step="0" aria-pressed="true"><span class="step-n">1</span><span>Booking</span></button>
+          </li>
+          <li class="step">
+            <button type="button" data-step="1" aria-pressed="false"><span class="step-n">2</span><span>Assessment</span></button>
+          </li>
+          <li class="step">
+            <button type="button" data-step="2" aria-pressed="false"><span class="step-n">3</span><span>Plan</span></button>
+          </li>
+          <li class="step">
+            <button type="button" data-step="3" aria-pressed="false"><span class="step-n">4</span><span>Follow-up</span></button>
+          </li>
+        </ol>
+        <div class="step-detail reveal" style="--d:1" aria-live="polite" data-step-detail>
+          <h3 data-step-title>Booking</h3>
+          <p data-step-text>Book online or by phone. We confirm the date and tell you what to bring.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section team" id="equipa">
+      <div class="container team-grid">
+        <figure class="team-media reveal">
+          <img src="img/img-3.jpg" alt="Doctor reviewing a dental X-ray" loading="lazy">
+        </figure>
+        <div class="team-copy reveal" style="--d:1">
+          <p class="eyebrow">Team</p>
+          <h2>Who takes care <em>of you.</em></h2>
+          <p class="lead">Each professional introduces themselves with their specialty and their professional registration.</p>
+          <div class="team-cards">
+            <article class="member">
+              <div class="avatar" aria-hidden="true">D</div>
+              <div>
+                <h3>[Dentist's name]</h3>
+                <p>[Specialty]</p>
+                <small>Register no.: [number to confirm]</small>
+              </div>
+            </article>
+            <article class="member">
+              <div class="avatar" aria-hidden="true">H</div>
+              <div>
+                <h3>[Hygienist's name]</h3>
+                <p>Oral hygiene</p>
+                <small>Register no.: [number to confirm]</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS (carousel) ============ -->
+    <section class="section testimonials" id="testemunhos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Testimonials</p>
+            <h2>What <em>patients say.</em></h2>
+          </div>
+        </div>
+        <!-- PLACEHOLDER: replace with real, authorised testimonials. Do not publish invented texts. -->
+        <div class="quotes reveal" data-quotes>
+          <div class="quote-track">
+            <blockquote class="quote is-active">[Patient testimonial. Replace with a real, authorised opinion.]</blockquote>
+            <blockquote class="quote">[Patient testimonial. Replace with a real, authorised opinion.]</blockquote>
+            <blockquote class="quote">[Patient testimonial. Replace with a real, authorised opinion.]</blockquote>
+          </div>
+          <div class="quote-controls">
+            <button class="round-btn dark" type="button" data-q-prev aria-label="Previous testimonial">&larr;</button>
+            <div class="quote-dots" data-q-dots></div>
+            <button class="round-btn dark" type="button" data-q-next aria-label="Next testimonial">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING (interactive) ============ -->
+    <section class="section booking" id="marcar">
+      <div class="container booking-grid">
+        <div class="booking-intro reveal">
+          <p class="eyebrow">Book an appointment</p>
+          <h2>Choose the service, the day and the time.</h2>
+          <p class="lead">We confirm by phone or email. There is no charge for booking.</p>
+          <div class="summary" aria-live="polite">
+            <p class="sum-label">Your choice</p>
+            <dl>
+              <div><dt>Service</dt><dd data-sum-service>Not chosen yet</dd></div>
+              <div><dt>Day</dt><dd data-sum-date>Not chosen yet</dd></div>
+              <div><dt>Time</dt><dd data-sum-time>Not chosen yet</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="book-form reveal" style="--d:1" data-book novalidate>
+          <div class="field">
+            <label for="b-service">Service</label>
+            <select id="b-service" name="service" data-b-service required>
+              <option value="">Choose a service</option>
+              <option>Check-up and diagnosis</option>
+              <option>Cleaning and prevention</option>
+              <option>Smile aesthetics</option>
+              <option>Implants and rehabilitation</option>
+              <option>Emergency</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="b-date">Day</label>
+            <input id="b-date" name="date" type="date" required data-b-date>
+            <small class="error"></small>
+          </div>
+
+          <fieldset class="field slots-field">
+            <legend>Time</legend>
+            <div class="slots" data-b-slots role="group" aria-label="Available times"></div>
+            <small class="error"></small>
+          </fieldset>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="b-name">Name</label>
+              <input id="b-name" name="name" type="text" autocomplete="name" required data-b-name>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel" required data-b-phone placeholder="e.g. 923 456 789">
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" data-b-consent>
+            <span>I agree that the clinic may process this data to confirm my appointment, in accordance with the privacy policy.</span>
+          </label>
+          <small class="error consent-error"></small>
+
+          <button class="btn submit" type="submit">Request appointment</button>
+          <p class="form-note" role="status" data-b-note></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ QUESTIONS (search) ============ -->
+    <section class="section faq" id="perguntas">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Have a question? <em>Ask here.</em></h2>
+          <p class="lead">Write in your own words. We look for the closest answer and, if we can't find it, you can call us.</p>
+          <form class="ask" data-ask role="search">
+            <label class="field">
+              <span>Your question</span>
+              <input type="text" placeholder="e.g. Does cleaning hurt?" data-ask-input maxlength="200">
+            </label>
+            <button class="btn" type="submit">Find answer</button>
+          </form>
+          <p class="ask-answer" data-ask-answer aria-live="polite"></p>
+        </div>
+
+        <div class="accordion reveal" style="--d:1" data-faq>
+          <details open data-kw="pain hurt anaesthesia anesthesia treatment feel">
+            <summary>Do treatments hurt?</summary>
+            <p>We use local anaesthesia whenever it is needed and explain each step before we begin. You can ask for a break at any time.</p>
+          </details>
+          <details data-kw="first appointment assessment plan quote estimate">
+            <summary>What happens at the first appointment?</summary>
+            <p>We carry out an assessment, explain what we found and present the options. We don't go ahead with any treatment without a written plan and quote.</p>
+          </details>
+          <details data-kw="sterilisation sterilization hygiene instruments infection">
+            <summary>How are instruments handled?</summary>
+            <p>Instruments are sterilised between each use. [Describe the clinic's actual protocol.]</p>
+          </details>
+          <details data-kw="payment insurance card price cost plans">
+            <summary>What payment methods are accepted?</summary>
+            <p>[Confirm payment methods, insurance agreements and plans accepted by the clinic.]</p>
+          </details>
+          <details data-kw="urgent emergency pain night weekend">
+            <summary>What if I have urgent pain?</summary>
+            <p>Call [emergency number to confirm]. [Confirm emergency opening hours.]</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>We look forward <em>to seeing you.</em></h2>
+          <ul class="contact-list">
+            <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>Address</b><span>[Street, number, neighbourhood, city]</span></div></li>
+            <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><b>Phone</b><span><a href="tel:+000000000">[number to confirm]</a></span></div></li>
+            <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><b>Email</b><span><a href="mailto:geral@clinica.exemplo">[email to confirm]</a></span></div></li>
+            <li><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Hours</b><span data-hours>Mon–Fri 09:00–19:00 · Sat. 09:00–13:00 <em>[to confirm]</em></span></div></li>
+          </ul>
+          <p class="open-status" data-open-status>Checking opening hours…</p>
+        </div>
+        <figure class="contact-media reveal" style="--d:1">
+          <img src="img/img-4.jpg" alt="Precision equipment and microscope in the clinic" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-tooth"/></svg></span>
+          <span class="brand-text"><b>Dental</b><small>Clinic</small></span>
+        </a>
+        <p class="footer-lead">Dental care with clarity, calm and confidence.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Navigate</h4>
+        <a href="#servicos">Services</a>
+        <a href="#como-funciona">How it works</a>
+        <a href="#equipa">Team</a>
+        <a href="#perguntas">Questions</a>
+      </nav>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy policy</a>
+        <a href="#">Complaints book</a>
+        <a href="#">Professional registration: [to confirm]</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; 2026 Dental Clinic. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Mobile fixed CTA -->
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a class="btn-ghost" href="tel:+000000000">Call</a>
+    <a class="btn" href="#marcar">Book an appointment</a>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+</body>
+</html>
